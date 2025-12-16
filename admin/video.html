@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدیریت ویدیوها - elbay TV</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- فونت وزیر برای فارسی -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+</head>
+<body style="background: #f8f9fa; min-height: 100vh;">
+
+    <!-- نوار بالایی -->
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-camera-reels me-2"></i>
+                پنل مدیریت elbay TV
+            </a>
+            <div class="d-flex align-items-center">
+                <span class="text-white me-3">مدیر</span>
+                <a href="index.html" class="btn btn-outline-light btn-sm">
+                    خروج
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid py-4">
+        <div class="row">
+            <!-- سایدبار راست - منو -->
+            <div class="col-md-3 col-lg-2 mb-4">
+                <div class="card border-0 shadow-sm rounded-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary mb-4">
+                            <i class="bi bi-menu-button me-2"></i>
+                            منوی مدیریت
+                        </h5>
+                        
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a class="nav-link text-dark" href="categories.html">
+                                    <i class="bi bi-folder me-2"></i>
+                                    دسته‌بندی‌ها
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link active bg-primary text-white rounded-3" href="#">
+                                    <i class="bi bi-collection-play me-2"></i>
+                                    ویدیوها
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link text-dark" href="add-video.html">
+                                    <i class="bi bi-plus-circle me-2"></i>
+                                    افزودن ویدیو جدید
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link text-dark" href="comments.html">
+                                    <i class="bi bi-chat-dots me-2"></i>
+                                    نظرات
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- محتوای اصلی سمت چپ -->
+            <div class="col-md-9 col-lg-10">
+                <!-- هدر صفحه -->
+                <div class="mb-4">
+                    <h2 class="h4 fw-bold text-dark mb-2">
+                        <i class="bi bi-collection-play text-primary me-2"></i>
+                        مدیریت ویدیوها
+                    </h2>
+                    <p class="text-muted mb-0">ویدیوهای سایت را در این بخش مشاهده و مدیریت کنید</p>
+                </div>
+
+                <!-- کارت لیست ویدیوها -->
+                <div class="card border-0 shadow-sm rounded-3">
+                    <div class="card-header bg-light border-0 py-3">
+                        <h5 class="card-title mb-0">
+                            <i class="bi bi-play-btn me-2 text-primary"></i>
+                            لیست ویدیوها
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- ویدیو ۱ -->
+                        <div class="card border mb-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <!-- تصویر ویدیو -->
+                                    <div class="col-md-3 mb-3 mb-md-0">
+                                        <div class="bg-dark rounded-3 overflow-hidden" style="height: 150px; position: relative;">
+                                            <div class="position-absolute top-50 start-50 translate-middle">
+                                                <i class="bi bi-play-circle fs-1 text-white"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- اطلاعات ویدیو -->
+                                    <div class="col-md-8">
+                                        <h5 class="card-title text-primary mb-2">
+                                            آموزش طراحی وب با Bootstrap 5
+                                        </h5>
+                                        <p class="card-text text-muted mb-3 small">
+                                            در این ویدیو به صورت کامل با Bootstrap 5 آشنا می‌شوید و یک سایت ریسپانسیو طراحی می‌کنید.
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <span class="badge bg-info me-2">آموزشی</span>
+                                                <span class="text-muted small">
+                                                    <i class="bi bi-calendar me-1"></i>
+                                                    ۱۴۰۲/۱۰/۱۵
+                                                </span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-danger btn-sm">
+                                                <i class="bi bi-trash me-1"></i>
+                                                حذف ویدیو
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ویدیو ۲ -->
+                        <div class="card border mb-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <!-- تصویر ویدیو -->
+                                    <div class="col-md-3 mb-3 mb-md-0">
+                                        <div class="bg-dark rounded-3 overflow-hidden" style="height: 150px; position: relative;">
+                                            <div class="position-absolute top-50 start-50 translate-middle">
+                                                <i class="bi bi-play-circle fs-1 text-white"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- اطلاعات ویدیو -->
+                                    <div class="col-md-8">
+                                        <h5 class="card-title text-primary mb-2">
+                                            آموزش JavaScript مقدماتی
+                                        </h5>
+                                        <p class="card-text text-muted mb-3 small">
+                                            شروع یادگیری JavaScript از پایه. شامل مفاهیم اصلی، متغیرها، توابع و DOM.
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <span class="badge bg-info me-2">آموزشی</span>
+                                                <span class="text-muted small">
+                                                    <i class="bi bi-calendar me-1"></i>
+                                                    ۱۴۰۲/۱۰/۱۰
+                                                </span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-danger btn-sm">
+                                                <i class="bi bi-trash me-1"></i>
+                                                حذف ویدیو
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ویدیو ۳ -->
+                        <div class="card border mb-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <!-- تصویر ویدیو -->
+                                    <div class="col-md-3 mb-3 mb-md-0">
+                                        <div class="bg-dark rounded-3 overflow-hidden" style="height: 150px; position: relative;">
+                                            <div class="position-absolute top-50 start-50 translate-middle">
+                                                <i class="bi bi-play-circle fs-1 text-white"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- اطلاعات ویدیو -->
+                                    <div class="col-md-8">
+                                        <h5 class="card-title text-primary mb-2">
+                                            مستند طبیعت ایران
+                                        </h5>
+                                        <p class="card-text text-muted mb-3 small">
+                                            زیبایی‌های پنهان طبیعت ایران. جنگل‌های شمال، کویر مرکزی و کوهستان‌های زاگرس.
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <span class="badge bg-success me-2">مستند</span>
+                                                <span class="text-muted small">
+                                                    <i class="bi bi-calendar me-1"></i>
+                                                    ۱۴۰۲/۰۹/۲۸
+                                                </span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-danger btn-sm">
+                                                <i class="bi bi-trash me-1"></i>
+                                                حذف ویدیو
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ویدیو ۴ -->
+                        <div class="card border mb-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <!-- تصویر ویدیو -->
+                                    <div class="col-md-3 mb-3 mb-md-0">
+                                        <div class="bg-dark rounded-3 overflow-hidden" style="height: 150px; position: relative;">
+                                            <div class="position-absolute top-50 start-50 translate-middle">
+                                                <i class="bi bi-play-circle fs-1 text-white"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- اطلاعات ویدیو -->
+                                    <div class="col-md-8">
+                                        <h5 class="card-title text-primary mb-2">
+                                            آموزش پخت پاستا ایتالیایی
+                                        </h5>
+                                        <p class="card-text text-muted mb-3 small">
+                                            آموزش کامل پخت پاستا کاربونارا به روش ایتالیایی. مواد اولیه و مراحل پخت.
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <span class="badge bg-warning me-2">آشپزی</span>
+                                                <span class="text-muted small">
+                                                    <i class="bi bi-calendar me-1"></i>
+                                                    ۱۴۰۲/۰۹/۲۰
+                                                </span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-danger btn-sm">
+                                                <i class="bi bi-trash me-1"></i>
+                                                حذف ویدیو
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ویدیو ۵ -->
+                        <div class="card border">
+                            <div class="card-body">
+                                <div class="row">
+                                    <!-- تصویر ویدیو -->
+                                    <div class="col-md-3 mb-3 mb-md-0">
+                                        <div class="bg-dark rounded-3 overflow-hidden" style="height: 150px; position: relative;">
+                                            <div class="position-absolute top-50 start-50 translate-middle">
+                                                <i class="bi bi-play-circle fs-1 text-white"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- اطلاعات ویدیو -->
+                                    <div class="col-md-8">
+                                        <h5 class="card-title text-primary mb-2">
+                                            تمرینات ورزشی در خانه
+                                        </h5>
+                                        <p class="card-text text-muted mb-3 small">
+                                            ۳۰ روز چالش ورزشی در خانه. تمرینات کامل برای تقویت کل بدن بدون نیاز به تجهیزات.
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <span class="badge bg-danger me-2">ورزشی</span>
+                                                <span class="text-muted small">
+                                                    <i class="bi bi-calendar me-1"></i>
+                                                    ۱۴۰۲/۰۹/۱۵
+                                                </span>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-danger btn-sm">
+                                                <i class="bi bi-trash me-1"></i>
+                                                حذف ویدیو
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- اطلاعات پایین -->
+                <div class="text-center mt-4">
+                    <p class="text-muted small mb-0">
+                        <i class="bi bi-exclamation-triangle me-1 text-warning"></i>
+                        حذف ویدیو غیرقابل بازگشت است. قبل از حذف مطمئن شوید.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آموزش طراحی وب - elbay TV</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- فونت وزیر برای فارسی -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+</head>
+<body class="font-family-Vazirmatn bg-light">
+    <!-- هدر سایت -->
+    <header class="bg-gradient bg-primary bg-opacity-90 py-3 shadow sticky-top">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <a href="index.html" class="text-decoration-none text-white mb-3 mb-md-0">
+                    <h1 class="fs-2 fw-bold mb-0">
+                        <span class="text-info">elbay</span> TV
+                    </h1>
+                </a>
+                <a href="#" class="btn btn-info btn-lg rounded-pill px-4 shadow-sm">
+                    <i class="bi bi-person me-2"></i>ورود کاربران
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- محتوای اصلی صفحه ویدیو -->
+    <main class="py-4 py-md-5">
+        <div class="container">
+            <div class="row">
+                <!-- بخش اصلی ویدیو -->
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <!-- پلیر ویدیو -->
+                    <div class="card border-0 shadow-lg rounded-4 overflow-hidden mb-4">
+                        <div class="bg-dark position-relative" style="height: 450px;">
+                            <div class="position-absolute top-50 start-50 translate-middle text-center">
+                                <i class="bi bi-play-circle text-white fs-1 display-1"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- اطلاعات ویدیو -->
+                    <div class="card border-0 shadow-sm rounded-4">
+                        <div class="card-body p-4">
+                            <div class="mb-4">
+                                <h1 class="h2 text-primary fw-bold mb-2">آموزش طراحی وب با Bootstrap</h1>
+                                <div class="text-muted">
+                                    <i class="bi bi-calendar me-1"></i>
+                                    تاریخ انتشار: ۱۴۰۲/۱۰/۱۵
+                                </div>
+                            </div>
+
+                            <!-- توضیحات ویدیو -->
+                            <div class="border-top pt-4">
+                                <p class="mb-0">
+                                    در این ویدیوی آموزشی، به صورت کامل و گام به گام یاد می‌گیرید که چگونه یک وبسایت مدرن و ریسپانسیو با استفاده از Bootstrap 5 طراحی و پیاده‌سازی کنید.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- نظرات کاربران -->
+                    <div class="card border-0 shadow-sm rounded-4 mt-4">
+                        <div class="card-body p-4">
+                            <h3 class="h5 text-primary fw-bold mb-3">
+                                <i class="bi bi-chat-dots me-2"></i>
+                                نظرات کاربران
+                            </h3>
+                            
+                            <!-- فرم ارسال نظر -->
+                            <div class="card border-primary border-opacity-25 mb-4">
+                                <div class="card-body">
+                                    <div class="d-flex gap-3">
+                                        <div class="flex-shrink-0">
+                                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                                <i class="bi bi-person fs-4"></i>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <textarea class="form-control" rows="3" placeholder="نظر خود را درباره این ویدیو بنویسید..."></textarea>
+                                            <div class="d-flex justify-content-end mt-2">
+                                                <button type="button" class="btn btn-primary btn-sm">
+                                                    <i class="bi bi-send me-1"></i> ارسال نظر
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- لیست نظرات -->
+                            <div>
+                                <!-- نظر ۱ -->
+                                <div class="d-flex gap-3 mb-3">
+                                    <div class="flex-shrink-0">
+                                        <div class="bg-info text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                                            <i class="bi bi-person fs-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <div class="card border-0 bg-light">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <h6 class="card-title mb-0">محمد رضایی</h6>
+                                                    <small class="text-muted">۵ روز پیش</small>
+                                                </div>
+                                                <p class="card-text mb-0">ویدیوی بسیار عالی و کاربردی. ممنون از آموزش گام به گام و واضح.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- نظر ۲ -->
+                                <div class="d-flex gap-3 mb-3">
+                                    <div class="flex-shrink-0">
+                                        <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                                            <i class="bi bi-person fs-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <div class="card border-0 bg-light">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <h6 class="card-title mb-0">فاطمه کریمی</h6>
+                                                    <small class="text-muted">۵ روز پیش</small>
+                                                </div>
+                                                <p class="card-text mb-0">من تازه کار بودم و این ویدیو واقعا برام مفید بود. لطفا ادامه این سری آموزشی رو هم منتشر کنید.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- نظر ۳ -->
+                                <div class="d-flex gap-3">
+                                    <div class="flex-shrink-0">
+                                        <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                                            <i class="bi bi-person fs-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <div class="card border-0 bg-light">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <h6 class="card-title mb-0">علی احمدی</h6>
+                                                    <small class="text-muted">۵ روز پیش</small>
+                                                </div>
+                                                <p class="card-text mb-0">آموزش بسیار خوبی بود. مخصوصا بخش ریسپانسیو کردن سایت.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- سایدبار - ویدیوهای مرتبط -->
+                <div class="col-lg-4">
+                    <div class="sticky-top" style="top: 90px;">
+                        <div class="card border-0 shadow-sm rounded-4">
+                            <div class="card-header bg-primary text-white rounded-top-4">
+                                <h5 class="card-title mb-0">
+                                    <i class="bi bi-play-btn me-2"></i>
+                                    ویدیوهای مرتبط
+                                </h5>
+                            </div>
+                            <div class="card-body p-3">
+                                <!-- ویدیو مرتبط ۱ -->
+                                <a href="#" class="text-decoration-none">
+                                    <div class="d-flex gap-3 mb-3 border-bottom pb-3">
+                                        <div class="flex-shrink-0 position-relative">
+                                            <div class="bg-dark rounded-3" style="width: 120px; height: 70px;">
+                                                <div class="position-absolute top-50 start-50 translate-middle">
+                                                    <i class="bi bi-play-circle text-white"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="text-primary fw-bold mb-0">آموزش JavaScript مقدماتی</h6>
+                                            <small class="text-muted">آموزشی</small>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                                <!-- ویدیو مرتبط ۲ -->
+                                <a href="#" class="text-decoration-none">
+                                    <div class="d-flex gap-3 mb-3 border-bottom pb-3">
+                                        <div class="flex-shrink-0 position-relative">
+                                            <div class="bg-dark rounded-3" style="width: 120px; height: 70px;">
+                                                <div class="position-absolute top-50 start-50 translate-middle">
+                                                    <i class="bi bi-play-circle text-white"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="text-primary fw-bold mb-0">طراحی UI/UX حرفه‌ای</h6>
+                                            <small class="text-muted">طراحی</small>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                                <!-- ویدیو مرتبط ۳ -->
+                                <a href="#" class="text-decoration-none">
+                                    <div class="d-flex gap-3 mb-3 border-bottom pb-3">
+                                        <div class="flex-shrink-0 position-relative">
+                                            <div class="bg-dark rounded-3" style="width: 120px; height: 70px;">
+                                                <div class="position-absolute top-50 start-50 translate-middle">
+                                                    <i class="bi bi-play-circle text-white"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="text-primary fw-bold mb-0">React.js از صفر تا صد</h6>
+                                            <small class="text-muted">برنامه‌نویسی</small>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                                <!-- ویدیو مرتبط ۴ -->
+                                <a href="#" class="text-decoration-none">
+                                    <div class="d-flex gap-3 mb-3">
+                                        <div class="flex-shrink-0 position-relative">
+                                            <div class="bg-dark rounded-3" style="width: 120px; height: 70px;">
+                                                <div class="position-absolute top-50 start-50 translate-middle">
+                                                    <i class="bi bi-play-circle text-white"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="text-primary fw-bold mb-0">آموزش CSS Grid و Flexbox</h6>
+                                            <small class="text-muted">آموزشی</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- فوتر سایت -->
+    <footer class="bg-dark text-white pt-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <h3 class="fs-3 fw-bold mb-3">
+                        <span class="text-info">elbay</span> TV
+                    </h3>
+                    <p class="text-light opacity-75">
+                        پلتفرم انتشار ویدیو با طراحی مینیمال و لاکچری. اشتراک‌گذاری ویدیو با بهترین کیفیت.
+                    </p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="btn btn-outline-info btn-sm rounded-circle">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-info btn-sm rounded-circle">
+                            <i class="bi bi-telegram"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-info btn-sm rounded-circle">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-info btn-sm rounded-circle">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-2">
+                    <h5 class="text-info fw-bold mb-3">لینک‌های سریع</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="index.html" class="text-decoration-none text-light opacity-75">
+                                صفحه اصلی
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-light opacity-75">
+                                ویدیوها
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-light opacity-75">
+                                دسته‌بندی‌ها
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-light opacity-75">
+                                پربازدیدترین‌ها
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="text-info fw-bold mb-3">حساب کاربری</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-light opacity-75">
+                                ورود به حساب
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-light opacity-75">
+                                ثبت نام
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-light opacity-75">
+                                آپلود ویدیو
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-light opacity-75">
+                                تنظیمات حساب
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="text-info fw-bold mb-3">ارتباط با ما</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt text-info me-2"></i>
+                            تهران، خیابان ولیعصر
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-telephone text-info me-2"></i>
+                            ۰۲۱-۱۲۳۴۵۶۷۸
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-envelope text-info me-2"></i>
+                            info@elbaytv.ir
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-clock text-info me-2"></i>
+                            شنبه تا چهارشنبه ۹-۱۷
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-top border-secondary mt-5 pt-4 text-center">
+                <p class="text-light opacity-75 mb-0">
+                    تمامی حقوق برای <span class="text-info fw-bold">elbay TV</span> محفوظ است. © ۱۴۰۲
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- فقط Bootstrap JS بدون کد سفارشی -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
