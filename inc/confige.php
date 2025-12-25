@@ -1,12 +1,20 @@
 <?php
 
-$conn =mysqli_connect("localhost","root","","video");
+try{
+$host = "localhost";
+$dataBase = "video";
+$userName = "root";
+$pass = "";
 
-if(!$conn){
-echo mysqli_connect_error();
+$dsn = "mysql:host=$host;dbname=$dataBase;";
+
+$con = new PDO($dsn, $userName,$pass);
+
+return $con;
+
+}catch(Exception $e){
+    echo $e->getMessage();
 }
-
-
 
 
 
