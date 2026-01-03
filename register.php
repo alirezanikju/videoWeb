@@ -1,3 +1,8 @@
+<?php
+require_once "inc/confige.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
@@ -51,13 +56,13 @@
                     <!-- بدنه کارت -->
                     <div class="card-body p-4 p-md-5">
                         <!-- فرم ثبت نام -->
-                        <form>
+                        <form action="register.php" method="POST">
                             <!-- نام کاربری -->
                             <div class="mb-4">
                                 <label class="form-label fw-medium text-dark mb-2">
                                     نام کاربری
                                 </label>
-                                <input type="text" class="form-control border-primary border-opacity-25 rounded-3 py-3" 
+                                <input type="text" name="userName" class="form-control border-primary border-opacity-25 rounded-3 py-3" 
                                        placeholder="نام کاربری خود را وارد کنید">
                             </div>
 
@@ -66,7 +71,7 @@
                                 <label class="form-label fw-medium text-dark mb-2">
                                     ایمیل
                                 </label>
-                                <input type="email" class="form-control border-primary border-opacity-25 rounded-3 py-3" 
+                                <input type="email" name="userEmail" class="form-control border-primary border-opacity-25 rounded-3 py-3" 
                                        placeholder="example@email.com">
                             </div>
 
@@ -75,27 +80,32 @@
                                 <label class="form-label fw-medium text-dark mb-2">
                                     رمز عبور
                                 </label>
-                                <input type="password" class="form-control border-primary border-opacity-25 rounded-3 py-3" 
+                                <input type="password" name="userPass" class="form-control border-primary border-opacity-25 rounded-3 py-3" 
                                        placeholder="رمز عبور">
                             </div>
 
-                            <!-- تایید شرایط -->
+                            
+                            <!-- رمز عبور -->
                             <div class="mb-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="agree" required>
-                                    <label class="form-check-label text-dark" for="agree">
-                                        موافقت با شرایط سایت
-                                    </label>
-                                </div>
+                                <label class="form-label fw-medium text-dark mb-2">
+                                   تکرار رمز عبور
+                                </label>
+                                <input type="password" name="userConfirmPass" class="form-control border-primary border-opacity-25 rounded-3 py-3" 
+                                       placeholder="تکرار رمز عبور">
                             </div>
+
 
                             <!-- دکمه ثبت نام -->
                             <div class="d-grid mt-4">
-                                <button type="submit" class="btn btn-primary btn-lg rounded-3 py-3 fw-bold">
-                                    <i class="bi bi-person-plus me-2"></i>
-                                    ثبت نام
-                                </button>
-                            </div>
+    <label for="submitBtn" class="btn btn-primary btn-lg rounded-3 py-3 fw-bold position-relative" style="cursor: pointer;">
+        <i class="bi bi-person-plus me-2"></i>
+        ثبت نام
+        <input type="submit" name="doRegister"
+               id="submitBtn" 
+               class="position-absolute top-0 start-0 w-100 h-100 opacity-0"
+               value="ثبت نام">
+    </label>
+</div>
                         </form>
 
                         <!-- جداکننده -->

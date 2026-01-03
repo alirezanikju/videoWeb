@@ -1,3 +1,8 @@
+<?php
+require_once "inc/confige.php";
+?>
+
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
